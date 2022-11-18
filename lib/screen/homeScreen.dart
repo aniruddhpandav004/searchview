@@ -44,6 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         onTap: () {
                           homeController.clickData.value =
                               homeController.data[index];
+                          homeController.filterData(homeController.clickData.value);
                         },
                         child: ListTile(
                           title: Text("${homeController.data[index]}"),
